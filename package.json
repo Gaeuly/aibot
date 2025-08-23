@@ -1,0 +1,14 @@
+{
+  "name": "ai-selfbot",
+  "version": "1.0.0",
+  "description": "A Discord self-bot that replies to messages using AI.",
+  "main": "ai-selfbot.js",
+  "scripts": {
+    "start": "node ai-selfbot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.7.0"
+  }
+}
