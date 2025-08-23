@@ -91,7 +91,7 @@ async function getAiReply(history) {
             },
         };
 
-        const apiKey = ""; // Disediakan oleh environment
+        const apiKey = "AIzaSyDZ0h3NgaxJKYg5B6oKD-W6z41xM00m128"; // Disediakan oleh environment
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=${apiKey}`;
 
         const response = await fetch(apiUrl, {
