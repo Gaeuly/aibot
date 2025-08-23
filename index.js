@@ -62,7 +62,11 @@ client.on('messageCreate', async (message) => {
                 }
             }
         } catch (error) {
-            console.error('[ERROR] Failed to process reply:', error);
+            // Kita akan log error ini, tapi tidak akan membuat bot crash.
+            // Error MESSAGE_ID_NOT_FOUND sering terjadi jika pesan asli dihapus dengan cepat.
+            if (error.code !== 'MESSAGE_ID_NOT_FOUND') {
+                 console.error('[ERROR] Failed to process reply:', error);
+            }
         }
     }
 });
@@ -93,8 +97,8 @@ async function getAiReply(history) {
 
         const apiKey = "AIzaSyDZ0h3NgaxJKYg5B6oKD-W6z41xM00m128"; // Disediakan oleh environment
         
-        // === FIX: Mengganti model ke 'gemini-pro' ===
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`;
+        // === FIX: Mengganti model ke 'gemini-1.5-flash-latest' ===
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
         const response = await fetch(apiUrl, {
             method: 'POST',
