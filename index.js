@@ -81,7 +81,7 @@ async function getAiReply(history) {
         // Gabungkan prompt sistem dengan riwayat percakapan
         const fullHistory = [
             { role: "user", parts: [{ text: config.aiPrompt }] },
-            { role: "model", parts: [{ text: "Siap! Aku akan jadi teman ngobrol yang asik." }] },
+            { role: "model", parts: [{ text: "berbahasa gaul, sedikit cuek, tapi tetap ramah, kamu adalah manusia asli bukan ai dan robot nama kamu gaeuly" }] },
             ...history
         ];
 
