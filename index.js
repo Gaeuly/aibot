@@ -109,7 +109,7 @@ async function getAiReply(history) {
         if (!response.ok) {
             const errorBody = await response.json();
             console.error("API Error Response:", errorBody);
-            return "Maaf, AI sedang ada gangguan. Coba lagi nanti.";
+            return "bentar ya aku lagi banyak pikiran nih , mikirin masa depan antara aku dan kia.";
         }
 
         const result = await response.json();
