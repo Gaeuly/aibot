@@ -1,6 +1,6 @@
 module.exports = {
     // Ganti dengan token akun Discord alternatifmu
-    token: "MTM0MzE2ODk2ODIzNTU1MjgxNA.GLFDlN.-mngSZCX9719PNDGZO5iVFRx6tpmW8FQpjfrss",
+    token: "",
 
     // (Opsional) Ganti nama ini sesuai kepribadian AI yang kamu mau
     aiName: "Asisten AI",
